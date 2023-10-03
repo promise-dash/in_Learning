@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 3px 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo p{
+    font-size: large;
+}
+
+.logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    background-color: rgb(239, 239, 239);
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.search-bar i{
+    font-size: 13px;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    gap: 1rem;
+}
+.icons div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.icons i{
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 18% auto;
+}
+.menu-bar{
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.menu-bar a{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 2rem;
+    margin-bottom: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+.menu-bar a:hover{
+    background-color: rgb(235, 234, 234);
+}
+.settings{
+    margin-top: 3.6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+.content{
+    padding: 1.2rem 7rem;
+    position: relative;
+}
+.content .title{
+    font-size: 1.3rem;
+}
+.roles-heading{
+    margin-top: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+}
+.roles-heading p{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.roles-heading small{
+    font-size: 11px;
+    font-weight: lighter;
+}
+.grid-cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 1rem;
+}
+.grid-cols div{
+    padding: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+#col-1{
+    background-color: rgb(250, 244, 210);
+}
+#col-2{
+    background-color: rgb(254, 230, 220);
+}
+#col-3{
+    background-color: rgb(207, 249, 226);
+}
+#col-4{
+    background-color: rgb(208, 240, 248);
+}
+#col-5{
+    background-color: rgb(223, 244, 249);
+}
+#col-6{
+    background-color: rgb(237, 212, 250);
+}
+#col-7{
+    background-color: rgb(248, 216, 231);
+}
+#col-8{
+    background-color: rgb(248, 237, 219);
+}
+
+.show-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin: 1.5rem 0px;
+    gap: 5px;
+}
+.show-more i{
+    font-size: 10px;
+}
+.paths{
+    margin-top: 1rem;
+}
+.path-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.path-heading p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.path-heading small{
+    color: rgb(34, 104, 253);
+    font-size: 12px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 1rem;
+}
+.course{
+    width: 100%;
+    height: fit-content;
+}
+.course img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.course small{
+    font-size: 9px;
+}
+.course p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 1rem;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.help{
+    position: absolute;
+    right: 2rem;
+    bottom: -3px;
+    background-color: rgb(69, 68, 68);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
